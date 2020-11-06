@@ -14,5 +14,5 @@ COPY . /app
 
 WORKDIR Model
 
-ENTRYPOINT ["python"]
+ENTRYPOINT ["model"]
 CMD ["app.py"]
