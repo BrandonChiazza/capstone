@@ -45,6 +45,7 @@ pyasn1-modules==0.2.8
 PyMySQL==0.10.0
 python-dateutil==2.6.1
 python-slugify==4.0.1
+pytorch==1.7.0
 PyYAML==5.3.1
 requests==2.24.0
 requests-oauthlib==1.3.0
@@ -60,6 +61,7 @@ tensorflow-estimator==2.3.0
 termcolor==1.1.0
 text-unidecode==1.3
 toml==0.10.1
+torch==3.6.0
 tqdm==4.48.0
 troposphere==2.6.2
 urllib3==1.25.10
