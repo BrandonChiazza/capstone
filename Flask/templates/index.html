@@ -1,0 +1,34 @@
+{% extends "layout.html" %}
+
+    {% block body %}
+        <div class="container" id="content">
+            <h1>Welcome to the Memes Classifier!</h1>
+            <br>
+            <form id="form" action="{{ url_for('upload') }}" method="post" enctype="multipart/form-data">
+                <div class="form-group">
+                    <div class="custom-file">
+                      <input type="file" class="custom-file-input" name="image" id="image">
+                      <label class="custom-file-label" for="image">Select meme...</label>
+                    </div>
+                  </div>
+                
+                <button type="submit" class="btn btn-primary">Upload</button>
+
+                <br>
+                {% if filename %}
+                    <img src="{{url_for('static', filename=filename)}}">
+                {% endif %}
+                <br>
+                {% if text_extracted %}
+                    <br>
+                    <h3>Text extracted:</h3>
+                    <h4>{{ text_extracted }}</h4>
+                {% endif %}
+            </form>
+
+            
+            <!--{% block second %}{% endblock %}-->
+
+
+    {% endblock %}
+
