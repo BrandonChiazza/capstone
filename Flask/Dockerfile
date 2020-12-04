@@ -14,8 +14,8 @@ WORKDIR /deploy/
 RUN pip install -r requirements.txt
 RUN pip install virtualenv \
 virtualenv "." \
-".\Scripts\activate" \
-".\Scripts\pip.exe" install google-cloud-vision
+".\\Scripts\\activate" \
+".\\Scripts\\pip.exe" install google-cloud-vision
 EXPOSE 80
 EXPOSE 5000
 ENTRYPOINT ["python", "app.py"]
