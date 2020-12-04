@@ -2,7 +2,7 @@
 # !pip install google-cloud-vision
 import os
 #from google.cloud import vision
-import google-cloud-vision
+#import google.cloud.vision
 import io
 from PIL import Image
 import urllib.request
